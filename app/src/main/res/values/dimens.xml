@@ -1,0 +1,9 @@
+<resources>
+    <!-- 定义宽度 -->
+    <dimen name="width">75dp</dimen>
+    <!-- 定义高度 -->
+    <dimen name="height">58dp</dimen>
+    <dimen name="textSize">19sp</dimen>
+    <dimen name="countSize">12sp</dimen>
+    <dimen name="countPadding">4dp</dimen>
+</resources>
