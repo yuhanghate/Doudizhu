@@ -18,19 +18,19 @@ class MainActivity : AppCompatActivity() {
 
     // 添加每种牌的总数映射
     private val cardTotalMap = mapOf(
-        "2" to 12,
-        "A" to 12,
-        "K" to 12,
-        "Q" to 12,
-        "J" to 12,
-        "10" to 12,
-        "9" to 12,
-        "8" to 12,
-        "7" to 12,
-        "6" to 12,
-        "5" to 12,
-        "4" to 12,
-        "3" to 12
+        "2" to 8,
+        "A" to 8,
+        "K" to 8,
+        "Q" to 8,
+        "J" to 8,
+        "10" to 8,
+        "9" to 8,
+        "8" to 8,
+        "7" to 8,
+        "6" to 8,
+        "5" to 8,
+        "4" to 8,
+        "3" to 8
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -87,6 +87,11 @@ class MainActivity : AppCompatActivity() {
             }
             // 重置背景色为默认颜色
             textView.setBackgroundColor(defaultColor)
+
+            // 设置第2列的背景色为淡黄色
+            if (index % 5 == 2) {
+                textView.setBackgroundColor(android.graphics.Color.rgb(255, 255, 200))
+            }
         }
         Toast.makeText(this, "页面已重置", Toast.LENGTH_SHORT).show()
     }
@@ -233,13 +238,16 @@ class MainActivity : AppCompatActivity() {
                     setRowBackground(index / 5, greenColor)
                 }
             }
+
+            // 设置第2列的背景色为淡黄色
+            if (index % 5 == 2) {
+                textView.setBackgroundColor(android.graphics.Color.rgb(255, 255, 200))
+            }
         }
     }
 
     private fun setupClickListeners() {
         textViews.forEach { textView ->
-            var isDoubleClick = false
-
             textView.setOnClickListener { view ->
                 val clickedTextView = view as TextView
                 val currentTime = System.currentTimeMillis()
@@ -247,24 +255,45 @@ class MainActivity : AppCompatActivity() {
                 val row = position / 5
                 val col = position % 5
 
-                if (lastClickedView == clickedTextView &&
-                    currentTime - lastClickTime < doubleClickTimeout
-                ) {
-                    // 双击处理
-                    isDoubleClick = true
-                    handleDoubleClick(row, col, clickedTextView)
-                } else {
-                    // 延迟处理单击，等待可能的双击
-                    isDoubleClick = false
-                    textView.postDelayed({
-                        if (!isDoubleClick) {
-                            handleSingleClick(row, col, clickedTextView)
-                        }
-                    }, doubleClickTimeout)
-                }
+                // 处理单击
+                handleSingleClick(row, col, clickedTextView)
 
                 lastClickTime = currentTime
                 lastClickedView = clickedTextView
+            }
+
+            textView.setOnLongClickListener { view ->
+                val clickedTextView = view as TextView
+                val position = textViews.indexOf(clickedTextView)
+                val row = position / 5
+                val col = position % 5
+
+                // 清空当前宫格的数字
+                clickedTextView.text = ""
+
+                // 重新计算第0列的数字
+                val cardTextView = textViews[row * 5] // 第0列的牌面TextView
+                val cardType = cardTextView.text.toString()
+                val totalCards = cardTotalMap[cardType] ?: 0
+                val countTextView = binding.root.findViewById<TextView>(
+                    resources.getIdentifier("count${row}0", "id", packageName)
+                )
+                val usedCards = (1..4).sumOf { textViews[row * 5 + it].text.toString().toIntOrNull() ?: 0 }
+                val remainingCards = totalCards - usedCards
+                countTextView?.text = remainingCards.toString()
+
+
+
+                // 将整行背景色恢复为默认颜色
+                setRowBackground(row, defaultColor)
+
+                // 如果第0列不为0，将第2列背景色恢复为黄色
+                if (remainingCards > 0) {
+                    textViews[row * 5 + 2].setBackgroundColor(android.graphics.Color.rgb(255, 255, 200))
+                }
+
+                Toast.makeText(this, "已清空第${row}行，第${col}列的数字", Toast.LENGTH_SHORT).show()
+                true
             }
         }
     }

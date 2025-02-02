@@ -16,14 +16,14 @@
         <FrameLayout
             android:layout_width="@dimen/width"
             android:layout_height="@dimen/height"
-            android:padding="5dp"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            android:padding="5dp">
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/reset"
                 android:layout_width="55dp"
                 android:layout_height="35dp"
                 android:layout_gravity="center"
-                android:id="@+id/reset"
                 android:background="@drawable/button_background"
                 android:text="重置"
                 android:textColor="@android:color/white"
@@ -94,6 +94,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:padding="5dp"
+                android:textColor="@android:color/holo_red_dark"
                 android:text="2"
                 android:textSize="@dimen/textSize"
                 android:textStyle="bold" />
@@ -105,7 +106,6 @@
                 android:layout_gravity="top|end"
                 android:padding="@dimen/countPadding"
                 android:text="12"
-                android:textColor="@android:color/holo_red_dark"
                 android:textSize="@dimen/countSize"
                 android:textStyle="bold" />
         </FrameLayout>
@@ -121,7 +121,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -134,7 +135,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -147,7 +149,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -160,7 +163,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -193,6 +197,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:padding="5dp"
+                android:textColor="@android:color/holo_red_dark"
                 android:text="A"
                 android:textSize="@dimen/textSize"
                 android:textStyle="bold" />
@@ -204,7 +209,6 @@
                 android:layout_gravity="top|end"
                 android:padding="@dimen/countPadding"
                 android:text="12"
-                android:textColor="@android:color/holo_red_dark"
                 android:textSize="@dimen/countSize"
                 android:textStyle="bold" />
         </FrameLayout>
@@ -220,7 +224,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -233,7 +238,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -246,7 +252,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -259,7 +266,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -292,6 +300,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:padding="5dp"
+                android:textColor="@android:color/holo_red_dark"
                 android:text="K"
                 android:textSize="@dimen/textSize"
                 android:textStyle="bold" />
@@ -303,7 +312,6 @@
                 android:layout_gravity="top|end"
                 android:padding="@dimen/countPadding"
                 android:text="12"
-                android:textColor="@android:color/holo_red_dark"
                 android:textSize="@dimen/countSize"
                 android:textStyle="bold" />
         </FrameLayout>
@@ -319,7 +327,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -332,7 +341,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -345,7 +355,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -358,7 +369,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -391,6 +403,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:padding="5dp"
+                android:textColor="@android:color/holo_red_dark"
                 android:text="Q"
                 android:textSize="@dimen/textSize"
                 android:textStyle="bold" />
@@ -402,7 +415,6 @@
                 android:layout_gravity="top|end"
                 android:padding="@dimen/countPadding"
                 android:text="12"
-                android:textColor="@android:color/holo_red_dark"
                 android:textSize="@dimen/countSize"
                 android:textStyle="bold" />
         </FrameLayout>
@@ -419,7 +431,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -432,7 +445,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -445,7 +459,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -458,7 +473,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -491,6 +507,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:padding="5dp"
+                android:textColor="@android:color/holo_red_dark"
                 android:text="J"
                 android:textSize="@dimen/textSize"
                 android:textStyle="bold" />
@@ -502,7 +519,6 @@
                 android:layout_gravity="top|end"
                 android:padding="@dimen/countPadding"
                 android:text="12"
-                android:textColor="@android:color/holo_red_dark"
                 android:textSize="@dimen/countSize"
                 android:textStyle="bold" />
         </FrameLayout>
@@ -518,7 +534,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -531,7 +548,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -544,7 +562,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -557,7 +576,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -589,6 +609,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
+                android:textColor="@android:color/holo_red_dark"
                 android:padding="5dp"
                 android:text="10"
                 android:textSize="@dimen/textSize"
@@ -601,7 +622,6 @@
                 android:layout_gravity="top|end"
                 android:padding="@dimen/countPadding"
                 android:text="12"
-                android:textColor="@android:color/holo_red_dark"
                 android:textSize="@dimen/countSize"
                 android:textStyle="bold" />
         </FrameLayout>
@@ -617,7 +637,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -630,7 +651,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -643,7 +665,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -656,7 +679,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -689,6 +713,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:padding="5dp"
+                android:textColor="@android:color/holo_red_dark"
                 android:text="9"
                 android:textSize="@dimen/textSize"
                 android:textStyle="bold" />
@@ -700,7 +725,6 @@
                 android:layout_gravity="top|end"
                 android:padding="@dimen/countPadding"
                 android:text="12"
-                android:textColor="@android:color/holo_red_dark"
                 android:textSize="@dimen/countSize"
                 android:textStyle="bold" />
         </FrameLayout>
@@ -716,7 +740,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -729,7 +754,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -742,7 +768,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -755,7 +782,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -788,6 +816,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:padding="5dp"
+                android:textColor="@android:color/holo_red_dark"
                 android:text="8"
                 android:textSize="@dimen/textSize"
                 android:textStyle="bold" />
@@ -799,7 +828,6 @@
                 android:layout_gravity="top|end"
                 android:padding="@dimen/countPadding"
                 android:text="12"
-                android:textColor="@android:color/holo_red_dark"
                 android:textSize="@dimen/countSize"
                 android:textStyle="bold" />
         </FrameLayout>
@@ -815,7 +843,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -828,7 +857,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -841,7 +871,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -854,7 +885,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -887,6 +919,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:padding="5dp"
+                android:textColor="@android:color/holo_red_dark"
                 android:text="7"
                 android:textSize="@dimen/textSize"
                 android:textStyle="bold" />
@@ -898,7 +931,6 @@
                 android:layout_gravity="top|end"
                 android:padding="@dimen/countPadding"
                 android:text="12"
-                android:textColor="@android:color/holo_red_dark"
                 android:textSize="@dimen/countSize"
                 android:textStyle="bold" />
         </FrameLayout>
@@ -914,7 +946,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -927,7 +960,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -940,7 +974,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -953,7 +988,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -987,6 +1023,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:padding="5dp"
+                android:textColor="@android:color/holo_red_dark"
                 android:text="6"
                 android:textSize="@dimen/textSize"
                 android:textStyle="bold" />
@@ -998,7 +1035,6 @@
                 android:layout_gravity="top|end"
                 android:padding="@dimen/countPadding"
                 android:text="12"
-                android:textColor="@android:color/holo_red_dark"
                 android:textSize="@dimen/countSize"
                 android:textStyle="bold" />
         </FrameLayout>
@@ -1014,7 +1050,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -1027,7 +1064,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -1040,7 +1078,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -1053,7 +1092,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -1086,6 +1126,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:padding="5dp"
+                android:textColor="@android:color/holo_red_dark"
                 android:text="5"
                 android:textSize="@dimen/textSize"
                 android:textStyle="bold" />
@@ -1097,7 +1138,6 @@
                 android:layout_gravity="top|end"
                 android:padding="@dimen/countPadding"
                 android:text="12"
-                android:textColor="@android:color/holo_red_dark"
                 android:textSize="@dimen/countSize"
                 android:textStyle="bold" />
         </FrameLayout>
@@ -1113,7 +1153,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -1126,7 +1167,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -1139,7 +1181,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -1152,7 +1195,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -1185,6 +1229,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:padding="5dp"
+                android:textColor="@android:color/holo_red_dark"
                 android:text="4"
                 android:textSize="@dimen/textSize"
                 android:textStyle="bold" />
@@ -1196,7 +1241,6 @@
                 android:layout_gravity="top|end"
                 android:padding="@dimen/countPadding"
                 android:text="12"
-                android:textColor="@android:color/holo_red_dark"
                 android:textSize="@dimen/countSize"
                 android:textStyle="bold" />
         </FrameLayout>
@@ -1212,7 +1256,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -1225,7 +1270,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -1238,7 +1284,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -1251,7 +1298,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -1284,6 +1332,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:padding="5dp"
+                android:textColor="@android:color/holo_red_dark"
                 android:text="3"
                 android:textSize="@dimen/textSize"
                 android:textStyle="bold" />
@@ -1295,7 +1344,6 @@
                 android:layout_gravity="top|end"
                 android:padding="@dimen/countPadding"
                 android:text="12"
-                android:textColor="@android:color/holo_red_dark"
                 android:textSize="@dimen/countSize"
                 android:textStyle="bold" />
         </FrameLayout>
@@ -1311,7 +1359,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -1324,7 +1373,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -1337,7 +1387,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
@@ -1350,7 +1401,8 @@
             android:layout_height="@dimen/height"
             android:gravity="center"
             android:padding="5dp"
-            android:text="" />
+            android:text=""
+            android:textSize="@dimen/contentSize" />
 
         <View
             android:layout_width="1px"
