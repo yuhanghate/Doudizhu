@@ -3,8 +3,9 @@
     <dimen name="width">75dp</dimen>
     <!-- 定义高度 -->
     <dimen name="height">48dp</dimen>
-    <dimen name="textSize">24sp</dimen>
-    <dimen name="countSize">16sp</dimen>
+    <dimen name="textSize">33sp</dimen>
+    <dimen name="countSize">12sp</dimen>
     <dimen name="countPadding">4dp</dimen>
     <dimen name="contentSize">20sp</dimen>
+    <dimen name="countPaddingEnd">12dp</dimen>
 </resources>
